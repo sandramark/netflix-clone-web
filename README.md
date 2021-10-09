@@ -1,4 +1,4 @@
 # netflix-clone-web
-Netflix clone website created for education purpose. The page is published here:
+Netflix clone website created for educational purposes. The page is published here:
 https://sandramark.github.io/netflix-clone-web/
 
