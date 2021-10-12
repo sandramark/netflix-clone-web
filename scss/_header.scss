@@ -1,0 +1,139 @@
+// styling header part of the webpage
+header {
+    height: 75vh;
+    position: relative;
+
+    // styling navigation panel with position fixed
+    nav {
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        
+        ul {
+            display: flex;
+
+            li {
+            list-style: none;
+            padding-right: 3rem;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+       
+        .nav__logo {
+            width: 8rem;
+        }
+
+        .nav__user {
+            width: 2rem;
+        }
+    }
+
+    // styling header image with its title and buttons
+    // plus volume controler and age restriction
+    .header__container {
+        width: 100vw;
+        height: 75vh;
+        overflow: hidden;
+        
+        .header__movie--img {
+   
+            img {
+                width: 100%;
+                               
+            }
+        }
+
+        .header__gradient {
+            position: absolute;
+            height: 80vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.2) 48%, rgba(0,0,0,0.7) 100%);
+        }
+
+        .header__text--left {
+            position: absolute;
+            bottom: 12rem;
+            left: 5vw;
+
+            .header__text--title {
+                font-size: 4.2rem;
+                text-shadow: 3px 0px 5px rgba(150, 150, 150, 1);
+            }
+ 
+        }
+
+            .button {
+                padding: 1rem 3rem;
+                margin-right: 1rem;
+                border-radius: .5rem;
+                font-size: 120%;
+                font-weight: 700;
+                border: none;
+
+                box-shadow: 5px 3px 5px rgba(49, 49, 49, 0.7);
+                transition: .1s;
+
+                &:active {
+                    box-shadow: 1px 3px 5px rgba(49, 49, 49, 0.7);
+                    transform: translate(.2rem, .2rem);
+                }
+
+                .fas {
+                    padding-right: 1rem;   
+                }  
+                
+                &__info {
+                    background-color: rgb(187, 187, 187);
+                }
+            }
+
+            .header__text--right {
+                width: 10rem;
+                position: absolute;
+                bottom: 12rem;
+                right: 0;
+                display: flex;
+                margin-right: 5rem;
+
+                .header__volume {
+                    font-size: 2rem;
+                    padding: 1rem;
+                    margin-right: 2rem;
+                    border: .1rem solid white;
+                    border-radius: 50%;
+                    background-color: rgba(0, 0, 0, 0.1);
+
+                    
+                }
+
+                .header__age {
+                    border-left: .1rem solid white;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 5rem 0 1rem;
+                    background-color: rgba(0, 0, 0, 0.2);
+
+                }
+
+
+            }
+            
+        }
+
+
+
+}
+
+
+   
+
+

@@ -1,0 +1,26 @@
+html {
+    font-size: 62.5%; /* nastavíme font na 10px */
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem; 
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    color: white;
+}
+
+
+@import "./header";
+@import "./main";
+@import "./carousel";
+@import "./footer";
+
+

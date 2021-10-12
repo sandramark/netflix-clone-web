@@ -1,0 +1,44 @@
+.carousel__container {
+    position: relative;
+    margin-top: 5rem;
+    
+
+
+    .carousel {
+        display: flex;
+    
+        
+    }
+
+
+
+    .carousel__button {
+        // width: 2rem;
+        position: absolute;
+        
+        height: 19.5rem;
+        margin: 0;
+        padding: 0 2rem;
+        border: none;
+        
+
+        color: white;
+        background-color: rgba(34, 31, 31, 0.116);
+        overflow: hidden;
+
+        .fas {
+            font-size: 3rem;
+        }
+    }
+
+    .carousel__button--left {
+        top: 14%;
+        left: 0;
+    }
+
+    .carousel__button--right {
+        top: 15%;
+        right: 0;
+    }
+}
+

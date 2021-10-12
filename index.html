@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Sandra Markova">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Sandra Markova - My netflix clone">
+    <meta property="og:title" content="Sandra Markova - My netflix clone">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sandramark.github.io/netflix-clone-web/">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Sandra Markova - Junior Frontend Developer">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Sandra Markova - Junior Frontend Developer">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>My Netflix clone</title>
+    <link rel="stylesheet" href="./dist/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/fa4a24cc50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section with navigation, header picture, movie title and buttons -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""><img class="nav__logo" src="./img/netflix_4.png" alt="Netflix logo"></li></a></li>
+                <li><a href="">Domovská stránka</a></li>
+                <li><a href="">Pořady</a></li>
+                <li><a href="">Filmy</a></li>
+                <li><a href="">Nové a oblíbené</a></li>
+                <li><a href="">Můj seznam</a></li>
+
+            </ul>
+            <ul>
+                <li><i class="fas fa-search"></i></li>
+                <li> <a href="">Děti</a> </li>
+                <li><i class="fas fa-bell"></i></li>
+                <li><img class="nav__user" src="./img/netflix_user_icon.jpg" alt="Netflix user icon"></li>
+            </ul>
+        </nav>
+        <section class="header__container">
+
+            <div class="header__movie--img">
+                <!-- Img added by JS -->
+            </div>
+            <div class="header__gradient"></div>
+
+            <div class="header__text--left">
+                <h1 class="header__text--title">Title</h1>
+                <div class="buttons">
+                    <button id="button__play" class="button button__play"><i class="fas fa-play"></i> Přehrát</button>
+
+                    <button id="button__info" class="button button__info"><i class="fas fa-info"></i> Další
+                        informace</button>
+                </div>
+            </div>
+
+            <div class="header__text--right">
+                <div class="header__volume"><i class="fas fa-volume-up"></i></i></div>
+                <div class="header__age"><span>16+</span></div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main section, carousels, with movie lists  -->
+    <main>
+        <div>
+            <div class="carousel__container">
+                <h2>Pokračovat v přehrávání: Marek</h2>
+                <div class="carousel movies__top__rated">
+                    <!-- Carousels top rated movies added by JS -->
+                </div>
+
+                <button id="carousel__button__left--TopRated" class="carousel__button carousel__button--left"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button id="carousel__button__right--TopRated" class="carousel__button carousel__button--right"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="carousel__container">
+                <h2>Tudum</h2>
+                <div class="carousel movies__popular">
+                    <!-- Carousels popular movies added by JS -->
+                </div>
+
+                <button id="carousel__button__left--Popular" class="carousel__button carousel__button--left"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button id="carousel__button__right--Popular" class="carousel__button carousel__button--right"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+    </main>
+
+    <!-- Footer section with social networks, other links and contact form  -->
+    <footer>
+
+        <hr>
+        <div class="footer__container">
+            <div class="footer__links">
+                <ul class="social__networks">
+                    <li><a href="https://www.facebook.com/netflix/?brand_redir=113673210035394" target="blank"><i
+                                class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/netflix" target="blank"><i class="fab fa-twitter"></i></a></li>
+                    <li>
+                        <a href="https://www.youtube.com/c/Netflix" target="blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/netflix/?hl=cs" target="blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <div class="other__links">
+                    <ul>
+                        <li><a href="">Často kladené dotazy</a></li>
+                        <li><a href="">Jak se dívat</a></li>
+                        <li><a href="">Uvádí jedině Netflix</a></li>
+                        <li><a href="">Dárkové poukazy</a></li>
+                        <li><a href="">Test rychlosti</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="">Centrum zákaznické podpory</a></li>
+                        <li><a href="">Kariéra</a></li>
+                        <li><a href="">Podmínky používání</a></li>
+                        <li><a href="">Soukromí</a></li>
+                        <li></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="">Pro média</a></li>
+                        <li><a href="">Nastavení souborů cookies</a></li>
+                        <li><a href="">Právní oznámení</a></li>
+                        <li><a href="">Test rychlosti</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form__container">
+                <h2>Nechte nám vzkaz</h2>
+                <form id="form__contact" method="post" action="">
+                    <label for="name">Vaše jméno: (*)</label>
+                    <input class="form__input" type="text" name="name" id="name" required>
+                    <label for="email">Váš e-mail: (*)</label>
+                    <input class="form__input" type="email" name="email" id="email" required>
+                    <label for="subject">Předmět zprávy: </label>
+                    <input class="form__input" type="text" name="subject" id="subject">
+                    <label for="message">Text zprávy: (*)</label>
+                    <textarea class="form__input" type="text" name="message" id="message" rows="6" required></textarea>
+                    <input class="form__button" type="submit" name="submit" id="submit" value="Poslat zprávu">
+                </form>
+            </div>
+
+        </div>
+        <div class="netflix__cesko">Netflix Česko</div>
+    </footer>
+    
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
