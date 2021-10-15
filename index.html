@@ -39,6 +39,20 @@
 <body>
     <!-- Header section with navigation, header picture, movie title and buttons -->
     <header>
+        <template id="template__nav__user">
+            <div class="template__nav__user">
+                <ul>
+                    <li><a href="">Děti</a></li>
+                    <li><a href="">Nastavení</a></li>
+                    <hr>
+                    <li><a href=""><span class="bold">Účet</span> </a></li>
+                    <li><a href=""><span class="bold">Help centrum</span></a></li>
+                    <li><a href=""><span class="bold">Odhlásit z Netflixu</span></a></li>
+                </ul>
+                <div class="square__one"></div>
+                <div class="square__two"></div>
+            </div>
+        </template>
         <nav>
             <ul>
                 <li><a href=""><img class="nav__logo" src="./img/netflix_4.png" alt="Netflix logo"></li></a></li>
@@ -50,7 +64,7 @@
 
             </ul>
             <ul>
-                <li><i class="fas fa-search"></i></li>
+                <li class="header__search"><input type="text" id="header__search__input"  placeholder="Vyhledávání..." title="Type in a name"><i class="fas fa-search header__search__icon"></i></li>
                 <li> <a href="">Děti</a> </li>
                 <li><i class="fas fa-bell"></i></li>
                 <li><img class="nav__user" src="./img/netflix_user_icon.jpg" alt="Netflix user icon"></li>
@@ -101,9 +115,45 @@
                     <!-- Carousels popular movies added by JS -->
                 </div>
 
-                <button id="carousel__button__left--Popular" class="carousel__button carousel__button--left"><i
+                <button id="carousel__button__left--popular" class="carousel__button carousel__button--left"><i
                         class="fas fa-chevron-left"></i></button>
-                <button id="carousel__button__right--Popular" class="carousel__button carousel__button--right"><i
+                <button id="carousel__button__right--popular" class="carousel__button carousel__button--right"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="carousel__container">
+                <h2>Právě letí</h2>
+                <div class="carousel movies__upcoming">
+                    <!-- Carousels upcoming movies added by JS -->
+                </div>
+
+                <button id="carousel__button__left--upcoming" class="carousel__button carousel__button--left"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button id="carousel__button__right--upcoming" class="carousel__button carousel__button--right"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="carousel__container">
+                <h2>Můj seznam</h2>
+                <div class="carousel movies__latest">
+                    <!-- Carousels latest movies added by JS -->
+                </div>
+
+                <button id="carousel__button__left--latest" class="carousel__button carousel__button--left"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button id="carousel__button__right--latest" class="carousel__button carousel__button--right"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="carousel__container">
+                <h2>Uvádí jedině Netflix</h2>
+                <div class="carousel movies__now">
+                    <!-- Carousels now movies added by JS -->
+                </div>
+
+                <button id="carousel__button__left--now" class="carousel__button carousel__button--left carousel__button__posters"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button id="carousel__button__right--now" class="carousel__button carousel__button--right carousel__button__posters"><i
                         class="fas fa-chevron-right"></i></button>
             </div>
     </main>
@@ -170,6 +220,8 @@
         </div>
         <div class="netflix__cesko">Netflix Česko</div>
     </footer>
+    
+
     
     <!-- Javascript file -->
     <script src="script.js"></script>

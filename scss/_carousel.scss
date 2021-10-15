@@ -1,16 +1,24 @@
 .carousel__container {
     position: relative;
     margin-top: 5rem;
-    
-
+    max-width: 100%;
+    overflow: hidden;
 
     .carousel {
         display: flex;
     
-        
     }
 
 
+
+    .carousel__poster__now {
+        width: 20rem;
+
+        img {
+            max-width: 100%;
+        }
+
+    }
 
     .carousel__button {
         // width: 2rem;
@@ -29,6 +37,10 @@
         .fas {
             font-size: 3rem;
         }
+    }
+
+    .carousel__button__posters {
+        height: 25rem;
     }
 
     .carousel__button--left {
